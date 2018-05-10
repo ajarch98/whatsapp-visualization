@@ -1,5 +1,11 @@
 # whatsapp-visualization
 
+## What does this code do?
+The Python script does the following:
+- Retrieves data from the WhatsApp chat .txt file
+- Analyses data
+- Creates two .png files containing graphs of Time vs Message Frequency and Data against Message Frequency
+
 ## What do I need?
 
 - Python 3.7
