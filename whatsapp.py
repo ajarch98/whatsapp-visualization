@@ -8,8 +8,8 @@ import datetime
 
 matplotlib.style.use('ggplot')#select matplotlib style
 
-users = ['Advait Joshi', 'Tracy Mugwe']#list of members messaging one another
-filename = 'WhatsApp Chat with Tracy Mugwe.txt'#filepath of file containing whatsapp data
+users = ['Advait Joshi', 'Other Person']#list of members messaging one another
+filename = 'whatsapp.txt'#filepath of file containing whatsapp data
 
 def get_dataframe(users = users, filename = 'whatsapp.txt'):
     '''Returns dataframe with all the data from txt file'''
