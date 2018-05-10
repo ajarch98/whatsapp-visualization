@@ -6,11 +6,14 @@ The Python script does the following:
 - Analyses data
 - Creates two .png files containing graphs of Time vs Message Frequency and Data against Message Frequency
 
-## What do I need?
+## What do I need to run this script?
 
 - Python 3.7
 - .txt file with WhatsApp chat records
-- Jupyter Notebooks (for now)
+- Libraries:
+  - pandas
+  - numpy
+  - matplotlib
 
 ## How do I obtain WhatsApp chat records?
 
