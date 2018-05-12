@@ -12,7 +12,7 @@ matplotlib.style.use('ggplot')#select matplotlib style
 
 def set_consts():
     users = ['Advait Joshi', 'Other Person']#list of members messaging one another
-    filename = 'WhatsApp Chat with Tracy Mugwe.txt'#default filepath of file containing whatsapp data
+    filename = 'whatsapp.txt'#default filepath of file containing whatsapp data
 
     if len(sys.argv) > 1: #if command line arguments are greater than one
         filename = sys.argv[1] #set filename to first command line argument after python script's name
