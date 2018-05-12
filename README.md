@@ -6,6 +6,9 @@ The Python script does the following:
 - Analyses data
 - Creates two .png files containing graphs of Time vs Message Frequency and Data against Message Frequency
 
+##Command line arguments
+You can set the .txt file's name by passing it as a command line argument when running the Python script. Unfortunately, you will have to manually set the list of users from inside the code.
+
 ## What do I need to run this script?
 
 - Python 3.7
