@@ -3,15 +3,23 @@ import pandas as pd
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
+
+import sys
 import re
 import datetime
 
 matplotlib.style.use('ggplot')#select matplotlib style
 
-users = ['Advait Joshi', 'Other Person']#list of members messaging one another
-filename = 'whatsapp.txt'#filepath of file containing whatsapp data
+def set_consts():
+    users = ['Advait Joshi', 'Other Person']#list of members messaging one another
+    filename = 'WhatsApp Chat with Tracy Mugwe.txt'#default filepath of file containing whatsapp data
 
-def get_dataframe(users = users, filename = 'whatsapp.txt'):
+    if len(sys.argv) > 1: #if command line arguments are greater than one
+        filename = sys.argv[1] #set filename to first command line argument after python script's name
+
+    return users, filename #return a tuple of users and filename
+
+def get_dataframe(users, filename = 'whatsapp.txt'):
     '''Returns dataframe with all the data from txt file'''
     reg = '|'.join(users)
 
@@ -111,6 +119,7 @@ def get_word_use_frequency(data):
     word_frame.reset_index()
     return word_frame
 
-data = get_dataframe(users, filename)
+USERS, FILENAME = set_consts()
+data = get_dataframe(USERS, FILENAME)
 time_scatter_plot(data)
 date_line_plot(data)
