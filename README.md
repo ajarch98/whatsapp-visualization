@@ -17,6 +17,7 @@ You can set the .txt file's name by passing it as a command line argument when r
   - pandas
   - numpy
   - matplotlib
+  - flask
 
 ## How do I obtain WhatsApp chat records?
 
