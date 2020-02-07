@@ -6,17 +6,19 @@ The Python script does the following:
 - Analyses data
 - Creates two .png files containing graphs of Time vs Message Frequency and Data against Message Frequency
 
-##Command line arguments
-You can set the .txt file's name by passing it as a command line argument when running the Python script. Unfortunately, you will have to manually set the list of users from inside the code.
+## How do I run this script using pipenv?
+- Install Python 3
+- Install pipenv using the command `pip install pipenv`
+- Clone this repo
+- Change directory to the project directory: `cd whatsapp-visualization`
+- Run pipenv using the command `pipenv shell`
+- Install dependencies using the command `pipenv install`
+- That's it!
 
 ## What do I need to run this script?
-
-- Python 3.7
-- .txt file with WhatsApp chat records
-- Libraries:
-  - pandas
-  - numpy
-  - matplotlib
+- Python 3
+- .txt file with WhatsApp chat records (Rename this file to `whatsapp.txt` and place it in the same folder as the `whatsapp.py` file. 
+- Pipenv
 
 ## How do I obtain WhatsApp chat records?
 
@@ -26,5 +28,4 @@ You can set the .txt file's name by passing it as a command line argument when r
 
 ## Why isn't my code working? 
 
-- Set the correct list of users
-- Set the correct filepath to the .txt file with the WhatsApp chat records
+- Rename your file to `whatsapp.txt` and place it in the same folder as the `whatsapp.py` file
